@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <RadioGroup
+        android:id="@+id/FirstRadioGroup"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextDialogCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Most Viral"
+            android:textSize="26sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/viral_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular" />
+
+        <RadioButton
+            android:id="@+id/viral_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best" />
+
+        <RadioButton
+            android:id="@+id/viral_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Newest" />
+
+        <TextView
+            android:id="@+id/TextDialogCustom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="User Submitted"
+            android:textSize="26sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstRadioGroup" />
+
+        <RadioButton
+            android:id="@+id/user_famous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Famous" />
+
+        <RadioButton
+            android:id="@+id/user_rising"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rising" />
+
+        <RadioButton
+            android:id="@+id/user_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest" />
+
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="30dp">
+    <Button
+        android:id="@+id/done_filter"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Apply"
+        android:textColor="@color/colorPrimaryDark"
+        />
+</LinearLayout>
+</LinearLayout>
